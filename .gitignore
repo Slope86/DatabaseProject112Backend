@@ -1,0 +1,6 @@
+.conda
+.vscode
+.env
+run_flask_api_server.py
+/test
+__pycache__
