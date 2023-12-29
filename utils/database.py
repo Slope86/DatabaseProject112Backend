@@ -26,11 +26,8 @@ class Database:
             self.conn.close()
 
 
-""" mySQL query
--- Create the users table
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(255),
-    email VARCHAR(255)
-);
-"""
+if __name__ == "__main__":
+    db = Database()
+    print(db.db_config)
+    print(db.conn)
+    print(db.cursor)

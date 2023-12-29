@@ -1,18 +1,3 @@
-## Installation
-
-1. Clone the repository and install the dependencies
-
-```bash
-git clone --depth 1 https://github.com/Slope86/DatabaseProject112Backend
-cd DatabaseProject112Backend
-pip install -r requirements.txt
-```
-
-1. Rename the file `.env.example` to `.env` and fill the database infomation with your own values
-
-1. Intialize your database with the following sql queries
-
-```sql
 -- mySQL Query to create database fit_lohas
 CREATE DATABASE IF NOT EXISTS `fit_lohas`;
 
@@ -153,10 +138,4 @@ CREATE TABLE CourseEnter (
 -- Inserting CourseEnter 1: Cardio Kickboxing
 INSERT INTO CourseEnter (CourseID, UserID)
 VALUES (1, 4), (2, 4), (3, 5);
-```
 
-1. Run the server
-
-```bash
-python app.py
-```
