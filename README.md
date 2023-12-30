@@ -1,6 +1,10 @@
+# Database Project 112 Backend
+
+This repository contains the backend code for [DatabaseProject112](https://github.com/Slope86/DatabaseProject112).
+
 ## Installation
 
-1. Clone the repository and install the dependencies
+1. **Clone the repository and install dependencies:**
 
     ```bash
     git clone --depth 1 https://github.com/Slope86/DatabaseProject112Backend
@@ -8,9 +12,16 @@
     pip install -r requirements.txt
     ```
 
-1. Rename the file `.env.example` to `.env` and fill in your database login infomation.
+    This will clone the repository and install all the required dependencies specified in the `requirements.txt` file.
 
-1. Initialize your database with the following sql queries
+2. **Set up Database Connection**
+
+    - Rename the file `.env.example` to `.env`.
+    - Fill in the necessary database connection information within the `.env` file.
+
+3. **Initialize the Database**
+
+    Run the following SQL queries in your chosen database management system to initialize the required structure:
 
     ```sql
     -- mySQL Query to create database fit_lohas
@@ -184,8 +195,22 @@
     VALUES (1, 4), (2, 4), (3, 5);
     ```
 
-1. Run the server
+    Ensure these queries create the tables, relationships, or any initial data required for the project to function properly.
+
+4. **Run the Backend**
+
+    Run the following command to start the backend:
 
     ```bash
     python app.py
     ```
+
+    The backend should now be running on `http://localhost:5000`.
+
+## Contributing
+
+Feel free to contribute by creating issues or pull requests.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
