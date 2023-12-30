@@ -29,7 +29,7 @@ INSERT INTO users (
     Address, 
     Gender
 ) VALUES (
-    '1',
+    1,
     'admin', 
     'admin@gmail.com', 
     '9e37a8d2e30bb3c7a36f2e1646c0154c835f56175307445146b9bb0f80fdb1d6',  -- Password: dummyPass
@@ -47,14 +47,14 @@ INSERT INTO users(
     PasswordHash,
     UserRole
 ) VALUES (
-    '2',
+    2,
     'teacher01', 
     'teacher01@gmail.com',
     '9e37a8d2e30bb3c7a36f2e1646c0154c835f56175307445146b9bb0f80fdb1d6',  -- Password: dummyPass
     'TEACHER'
 ),
 ( 
-    '3',
+    3,
     'teacher02', 
     'teacher02@gmail.com',
     '9e37a8d2e30bb3c7a36f2e1646c0154c835f56175307445146b9bb0f80fdb1d6',  -- Password: dummyPass
@@ -67,13 +67,13 @@ INSERT INTO users(
     Email,
     PasswordHash
 ) VALUES ( 
-    '4',
+    4,
     'student01', 
     'student01@gmail.com',
     '9e37a8d2e30bb3c7a36f2e1646c0154c835f56175307445146b9bb0f80fdb1d6'  -- Password: dummyPass
 ),
 (
-    '5',
+    5,
     'student02', 
     'student02@gmail.com',
     '9e37a8d2e30bb3c7a36f2e1646c0154c835f56175307445146b9bb0f80fdb1d6'  -- Password: dummyPass
@@ -116,13 +116,42 @@ CREATE TABLE courses  (
 
 -- Inserting course 1: Cardio Kickboxing
 INSERT INTO courses (CourseName, CourseDescription, Category, TeacherID)
-VALUES 
-('Cardio Kickboxing', 'High-energy workout combining martial arts techniques and heart-pumping cardio.', 'Kickboxing', 1),
-('Strength Training 101', 'Introduction to basic strength exercises focusing on building muscle and strength.', 'Strength Training', 2),
-('Yoga for Flexibility', 'Gentle yoga practice aimed at improving flexibility and reducing stress.', 'Yoga', 2),
-('Advanced Kickboxing Techniques', 'Advanced techniques and combinations for experienced practitioners.', 'Kickboxing', 1),
-('Powerlifting Essentials', 'Focus on powerlifting exercises for building maximum strength.', 'Strength Training', 2),
-('Mindful Meditation through Yoga', 'Learn mindfulness and meditation practices through yoga poses.', 'Yoga', 2);
+VALUES (
+    'Cardio Kickboxing',
+    'High-energy workout combining martial arts techniques and heart-pumping cardio.',
+    'Kickboxing',
+    1
+),
+(
+    'Strength Training 101',
+    'Introduction to basic strength exercises focusing on building muscle and strength.',
+    'Strength Training',
+    2
+),
+(
+    'Yoga for Flexibility',
+    'Gentle yoga practice aimed at improving flexibility and reducing stress.',
+    'Yoga',
+    2
+),
+(
+    'Advanced Kickboxing Techniques',
+    'Advanced techniques and combinations for experienced practitioners.',
+    'Kickboxing',
+    1
+),
+(
+    'Powerlifting Essentials',
+    'Focus on powerlifting exercises for building maximum strength.',
+    'Strength Training',
+    2
+),
+(
+    'Mindful Meditation through Yoga',
+    'Learn mindfulness and meditation practices through yoga poses.',
+    'Yoga',
+    2
+);
 
 -- CourseEnter (CourseID, UserID, CreatedDate, ModifyDate)
 CREATE TABLE CourseEnter (
