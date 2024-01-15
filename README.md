@@ -21,11 +21,14 @@ This repository contains the backend code for [DatabaseProject112](https://githu
 
 3. **Initialize the Database**
 
-    Run the following SQL queries in your chosen database management system to initialize the required structure:
+    Run the following SQL queries ( SQL version: MySQL Community Server 8.0.17 ) in your chosen database management system to initialize the required structure:
 
     ```sql
     -- mySQL Query to create database fit_lohas
     CREATE DATABASE IF NOT EXISTS `fit_lohas`;
+
+    -- mySQL Query to use database fit_lohas
+    USE `fit_lohas`;
 
     -- mySQL Query to create table users
     CREATE TABLE users (
